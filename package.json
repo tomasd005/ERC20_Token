@@ -5,14 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "hardhat test",
-    "compile": "hardhat compile"
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
-    "hardhat": "^3.1.7"
+    "@nomicfoundation/hardhat-ethers": "^4.0.4",
+    "@nomicfoundation/hardhat-mocha": "^3.0.9",
+    "chai": "^6.2.2",
+    "hardhat": "^3.1.7",
+    "mocha": "^11.7.5"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.4.0"
